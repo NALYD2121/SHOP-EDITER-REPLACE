@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Éditeur d'Image</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="editor-container">
+        <h1>Éditeur d'Image</h1>
+        <div class="image-panel">
+            <canvas id="imageCanvas"></canvas>
+        </div>
+        <div class="controls">
+            <label for="imageInput">Importer une image :</label>
+            <input type="file" id="imageInput" accept="image/*">
+
+            <button id="neonEffect">Ajouter Effet Néon</button>
+            <button id="reset">Réinitialiser</button>
+
+            <label for="gradientStart">Dégradé Début :</label>
+            <input type="color" id="gradientStart" value="#00ffff">
+
+            <label for="gradientEnd">Dégradé Fin :</label>
+            <input type="color" id="gradientEnd" value="#0000ff">
+
+            <label for="neonColor">Couleur Néon :</label>
+            <input type="color" id="neonColor" value="#00ffff">
+
+            <button id="applyGradient">Appliquer Dégradé</button>
+            <button id="downloadImage">Télécharger l'image</button>
+            <button id="removeBgApiButton">Détourer avec API</button>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

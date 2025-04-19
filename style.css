@@ -1,0 +1,89 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: #0d0d0d; /* Noir profond */
+    color: #00ffff; /* Bleu cyan néon */
+}
+
+.editor-container {
+    text-align: center;
+    background: #1a1a1a; /* Noir légèrement plus clair */
+    border-radius: 15px;
+    padding: 20px;
+    box-shadow: 0 0 20px rgba(0, 255, 255, 0.5);
+}
+
+h1 {
+    font-size: 3rem;
+    margin-bottom: 20px;
+    color: #00ffff;
+    text-shadow: 0 0 10px #00ffff, 0 0 20px #00ffff;
+}
+
+.image-panel {
+    margin: 20px 0;
+    border: 2px solid #00ffff;
+    border-radius: 10px;
+    padding: 10px;
+    background: #0d0d0d;
+    box-shadow: 0 0 15px rgba(0, 255, 255, 0.3);
+}
+
+canvas {
+    border: 2px solid #00ffff;
+    border-radius: 10px;
+    max-width: 100%;
+    height: auto;
+    box-shadow: 0 10px 20px rgba(0, 255, 255, 0.5);
+}
+
+.controls button {
+    background: linear-gradient(90deg, #00ffff, #007fff); /* Dégradé bleu cyan */
+    border: 2px solid #00ffff;
+    padding: 10px 20px;
+    margin: 5px;
+    color: #0d0d0d;
+    font-size: 1rem;
+    cursor: pointer;
+    border-radius: 10px;
+    transition: background 0.3s, color 0.3s, transform 0.2s;
+    box-shadow: 0 4px 10px rgba(0, 255, 255, 0.5);
+}
+
+.controls button:hover {
+    background: linear-gradient(90deg, #007fff, #00ffff); /* Inversion du dégradé */
+    color: #ffffff;
+    transform: scale(1.05);
+    box-shadow: 0 6px 15px rgba(0, 255, 255, 0.7);
+}
+
+#imageInput {
+    display: none;
+}
+
+label[for="imageInput"] {
+    background: linear-gradient(90deg, #00ffff, #007fff); /* Dégradé bleu cyan */
+    border: 2px solid #00ffff;
+    padding: 10px 20px;
+    margin: 5px;
+    color: #0d0d0d;
+    font-size: 1rem;
+    cursor: pointer;
+    border-radius: 10px;
+    transition: background 0.3s, color 0.3s, transform 0.2s;
+    box-shadow: 0 4px 10px rgba(0, 255, 255, 0.5);
+    text-align: center;
+    display: inline-block;
+}
+
+label[for="imageInput"]:hover {
+    background: linear-gradient(90deg, #007fff, #00ffff); /* Inversion du dégradé */
+    color: #ffffff;
+    transform: scale(1.05);
+    box-shadow: 0 6px 15px rgba(0, 255, 255, 0.7);
+}
